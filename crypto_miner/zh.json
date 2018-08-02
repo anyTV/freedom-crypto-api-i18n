@@ -1,3 +1,4 @@
 {
-	"greetings": "你好 :name"
+	"greetings": "你好 :name",
+	"mail_dead_line1": "Worker :workerGuid, Miner :miner has stopped unexpectedly at :datetime"
 }
