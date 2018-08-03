@@ -2,6 +2,7 @@
 	"common" : {		
 	},
 	"mail_worker_dead" : {
+		"subject": "[Crypto Miner] Worker dead notification",
 		"detail_info" : "Worker :workerGuid, Miner :miner has stopped unexpectedly at :datetime",
 		"suggest_restart": "Please check the machine and restart the Crypto Miner if needed",
 		"note": "Note: if you do not want to receive this email, you can disable this feature in Crypto Miner",
