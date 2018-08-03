@@ -1,4 +1,10 @@
 {
-	"greetings": "你好 :name",
-	"mail_dead_line1": "Worker :workerGuid, Miner :miner has stopped unexpectedly at :datetime"
+	"common" : {		
+	},
+	"mail_worker_dead" : {
+		"detail_info" : "Worker :workerGuid, Miner :miner has stopped unexpectedly at :datetime",
+		"suggest_restart": "Please check the machine and restart the Crypto Miner if needed",
+		"note": "Note: if you do not want to receive this email, you can disable this feature in Crypto Miner",
+		"turn_off_notification_path": "CONFIGURE > MINING > Turn off 'Miner off notification'"
+	}
 }
