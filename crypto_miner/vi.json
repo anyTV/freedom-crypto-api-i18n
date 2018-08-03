@@ -6,6 +6,6 @@
 		"detail_info" : "Trạm đào :workerGuid, Công cụ đào :miner bị tắt đột ngột lúc :datetime",
 		"suggest_restart": "Hãy kiểm tra lại máy và khởi động lại Crypto Miner nếu cần thiết",
 		"note": "Chú ý: nếu bạn không muốn nhận email này, bạn có thể tắt chức năng này ở Crypto Miner",
-		"turn_off_notification_path": "CONFIGURE > MINING > Turn off 'Miner off notification'"
+		"turn_off_notification_path": "CẤU HÌNH > CẤU HÌNH ĐÀO > Tắt 'Thông báo khi máy đào tắt'"
 	}
 }
