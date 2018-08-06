@@ -1,0 +1,30 @@
+{
+  "lang-en": "English",
+  "lang-zh": "中文",
+  "lang-ja": "日本語",
+  "lang-de": "German",
+  "lang-nl": "Dutch",
+  "lang-pt": "Português",
+  "lang-es": "Español",
+  "lang-ru": "российский",
+  "lang-th": "Thai",
+  "lang-vi": "Việt Nam",
+
+  "dashboard": "Dashboard",
+  "channels": "Channels",
+  "earnings": "Earnings",
+
+  "join-the-community": "Join the community",
+  "connect-with-us": "Connect with us",
+  "join-us-now": "Join us now",
+  "sign-in": "Signin",
+  "logout": "Logout",
+
+  "copyright": "Copyright",
+  "language": "Language",
+
+  "announcement": "Announcements",
+  "no-announcements": "No announcements",
+
+  "by-freedom": "bởi Freedom!"
+}
