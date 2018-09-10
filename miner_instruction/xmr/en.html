@@ -1,1 +1,33 @@
-<p>XMR Testing</p>
+<h2><a id="user-content-obtaining-selockmemoryprivilege-failed" class="anchor" href="https://github.com/fireice-uk/xmr-stak/blob/master/doc/FAQ.md#obtaining-selockmemoryprivilege-failed" aria-hidden="true"></a>"Obtaining SeLockMemoryPrivilege failed."</h2>
+<p>For professional versions of Windows see&nbsp;<a href="https://msdn.microsoft.com/en-gb/library/ms190730.aspx" rel="nofollow">this article</a>. Make sure to reboot afterwards!</p>
+<p>For Windows 7/10 Home:</p>
+<ol>
+<li>
+<p>Download and install&nbsp;<a href="https://www.microsoft.com/en-us/download/details.aspx?id=17657" rel="nofollow">Windows Server 2003 Resource Kit Tools</a>. Ignore any incompatibility warning during installation.</p>
+</li>
+<li>
+<p>Open cmd or PowerShell as an administrator.</p>
+</li>
+<li>
+<p>Use&nbsp;<code>ntrights -u %USERNAME% +r SeLockMemoryPrivilege</code>&nbsp;where %USERNAME% is the user that will be running the program.</p>
+</li>
+<li>
+<p>Reboot.</p>
+</li>
+</ol>
+<p>Reference:&nbsp;<a href="http://rybkaforum.net/cgi-bin/rybkaforum/topic_show.pl?pid=259791#pid259791" rel="nofollow">http://rybkaforum.net/cgi-bin/rybkaforum/topic_show.pl?pid=259791#pid259791</a></p>
+<p><em>Warning: Do not download ntrights.exe from any other site other than the offical Microsoft download page.</em></p>
+<h2><a id="user-content-error-msvcp140dll-and-vcruntime140dll-not-available" class="anchor" href="https://github.com/fireice-uk/xmr-stak/blob/master/doc/FAQ.md#error-msvcp140dll-and-vcruntime140dll-not-available" aria-hidden="true"></a>Error msvcp140.dll and vcruntime140.dll not available</h2>
+<p>Download and install this&nbsp;<a href="https://go.microsoft.com/fwlink/?LinkId=746572" rel="nofollow">runtime package</a>&nbsp;from Microsoft.&nbsp;<em>Warning: Do NOT use "missing dll" sites - dll's are exe files with another name, and it is a fairly safe bet that any dll on a shady site like that will be trojaned. Please download offical runtimes from Microsoft above.</em></p>
+<h2><a id="user-content-error-memory-alloc-failed-mmap-failed" class="anchor" href="https://github.com/fireice-uk/xmr-stak/blob/master/doc/FAQ.md#error-memory-alloc-failed-mmap-failed" aria-hidden="true"></a>Error: MEMORY ALLOC FAILED: mmap failed</h2>
+<p>On Linux you will need to configure large page support and increase your ulimit -l.</p>
+<p>To set large page support, add the following lines to&nbsp;<code>/etc/sysctl.conf</code>&nbsp;(<code>/etc/sysctl.d/xmr-stak.conf</code>&nbsp;for&nbsp;<a href="https://www.archlinux.org/news/deprecation-of-etcsysctlconf/" rel="nofollow">Arch Linux</a>&nbsp;and its derivatives):</p>
+<pre><code>vm.nr_hugepages=128
+</code></pre>
+<p>To increase the ulimit, add following lines to&nbsp;<code>/etc/security/limits.conf</code>:</p>
+<pre><code>* soft memlock 262144
+* hard memlock 262144
+</code></pre>
+<p>You WILL need to log out and log back in for these settings to take effect on your user (no need to reboot, just relogin in your session).</p>
+<p>You can also do it Windows-style and simply run-as-root, but this is NOT recommended for security reasons.</p>
+<p>&nbsp;</p>
