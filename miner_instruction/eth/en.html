@@ -1,27 +1,27 @@
-<p><strong>Nội dung ch&iacute;nh</strong></p>
-<p>1. Điều chỉnh RAM ảo</p>
-<p>2. Điều chỉnh biến m&ocirc;i trường</p>
+<p><strong>Overview</strong></p>
+<p>1. Set Virtual Memory</p>
+<p>2.&nbsp;Set Environment Variables</p>
 <p><strong>-----------------------------------------------------</strong></p>
-<p><strong>Điều chỉnh RAM ảo</strong></p>
+<p><strong>Set Virtual Memory</strong></p>
 <ol>
-<li>Mở&nbsp; t&igrave;m kiếm v&agrave; đ&aacute;nh &ldquo;<strong>This PC</strong>&ldquo;, nhấp phải chuột v&agrave; chọn &ldquo;<strong>Properties</strong>&ldquo;</li>
-<li>Sau đ&oacute; chọn &ldquo;<strong>Advanced System Settings</strong>&ldquo;</li>
-<li>Tại &ldquo;<strong>Advanced</strong>&rdquo; tab,&nbsp; &ldquo;<strong>Performance</strong>&rdquo; chọn &ldquo;<strong>Settings</strong>&ldquo;</li>
-<li>Chọn &ldquo;<strong>Advanced</strong>&rdquo; tab</li>
-<li>Ớ ph&iacute;a dưới ban sẽ thấy &ldquo;<strong>Virtual memory</strong>&ldquo;, chọn &ldquo;<strong>Change</strong>&ldquo;</li>
+<li>Open up search and type in &ldquo;<strong>This PC</strong>&ldquo;, right click on it and choose &ldquo;<strong>Properties</strong>&ldquo;</li>
+<li>Then click on &ldquo;<strong>Advanced System Settings</strong>&ldquo;</li>
+<li>On &ldquo;<strong>Advanced</strong>&rdquo; tab where it says &ldquo;<strong>Performance</strong>&rdquo; click on &ldquo;<strong>Settings</strong>&ldquo;</li>
+<li>Click &ldquo;<strong>Advanced</strong>&rdquo; tab</li>
+<li>At the bottom you will see the &ldquo;<strong>Virtual memory</strong>&ldquo; option, click on &ldquo;<strong>Change</strong>&ldquo;</li>
 </ol>
 <ul>
-<li>Bỏ chọn&nbsp;<strong>&ldquo;Automatically manage paging file size for all drives</strong>&ldquo;</li>
-<li>Chọn &ldquo;<strong>Custom size</strong>&ldquo;</li>
-<li>T&ugrave;y thuộc v&agrave;o k&iacute;ch thước GPU hiện tại m&agrave; bạn sẽ cần tăng bộ nhớ ảo tương ứng. Th&ocirc;ng thường mỗi GPU cần &iacute;t nhất 4GB v&agrave; c&oacute; thể l&ecirc;n 5GB v&agrave;o cuối năm. V&igrave; vậy nesu bạn c&oacute; 6 GPU bạn sẽ cần 6x4GB = 24GB</li>
-<li>Tại &ldquo;<strong>Initial size (MB)</strong>&rdquo;, đ&aacute;nh&nbsp;<strong>4000MB x GPU Count (24000MB for 6 GPU mining rig)&nbsp;</strong></li>
-<li>Tại &ldquo;<strong>Maximum size (MB)</strong>&rdquo; đ&aacute;nh:&nbsp;<strong>5000MB x GPU Count (30000MB for 6 GPU mining rig)</strong></li>
-<li>Chọn &ldquo;<strong>Set</strong>&rdquo; , v&agrave; &ldquo;<strong>OK</strong>&rdquo; v&agrave; &ldquo;<strong>Apply</strong>&ldquo;</li>
+<li>Uncheck&nbsp;<strong>&ldquo;Automatically manage paging file size for all drives</strong>&ldquo;</li>
+<li>Check &ldquo;<strong>Custom size</strong>&ldquo;</li>
+<li>Now depending on how much GPU&rsquo;s you have you will need to increase the virtual memory. In general for each GPU you need to have 3GB Virtual Memory (because the DAG file used for hashing ethereum is above 2GB and going to 3 GB this year). So if you have 6 GPU you need to have 6x3GB Virtual Memory = 18GB</li>
+<li>In the &ldquo;<strong>Initial size (MB)</strong>&rdquo; type:&nbsp;<strong>2000MB x GPU Count (12000MB for 6 GPU mining rig, 24000MB for 12 GPU)&nbsp;</strong></li>
+<li>In the &ldquo;<strong>Maximum size (MB)</strong>&rdquo; type:&nbsp;<strong>3000MB x GPU Count (18000MB for 6 GPU mining rig, 36000MB for 12 GPU)</strong></li>
+<li>Click &ldquo;<strong>Set</strong>&rdquo; , then &ldquo;<strong>OK</strong>&rdquo; and &ldquo;<strong>Apply</strong>&ldquo;</li>
 </ul>
 <p><strong>-----------------------------------------------------</strong></p>
-<p><strong>Điều chỉnh biến m&ocirc;i trường</strong></p>
+<p><strong>Set Environment Variables</strong></p>
 <ol>
-<li>Mở cửa sổ Windows Command Prompt v&agrave; điều chỉnh c&aacute;c biến m&ocirc;i trường sau:</li>
+<li>Open windows Command Prompt and set below enviroment variables</li>
 </ol>
 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_FORCE_64BIT_PTR 0<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_MAX_HEAP_SIZE 100<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_USE_SYNC_OBJECTS 1<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_MAX_ALLOC_PERCENT 100<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_SINGLE_ALLOC_PERCENT 100</p>
 <p>&nbsp;</p>
