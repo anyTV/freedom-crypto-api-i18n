@@ -1,12 +1,7 @@
-#### Nội dung chính
-
+**Nội dung chính**
 1. Điều chỉnh RAM ảo
-
 2. Điều chỉnh biến môi trường
-
-
 ------------
-
 **Điều chỉnh RAM ảo**
 
 1. Mở  tìm kiếm và đánh **This PC**, nhấp phải chuột và chọn **Properties**
@@ -20,9 +15,7 @@
 - Tại **Initial size (MB)**, đánh 4000MB x GPU Count (24000MB cho máy đào 6 GPU )
 - Tại “Maximum size (MB)” đánh: 5000MB x GPU Count (30000MB cho máy đào 6 GPU)
 - Chọn “Set” , và “OK” và “Apply“
-
 ------------
-
 **Điều chỉnh biến môi trường**
 1. Mở cửa sổ** Windows Command Prompt **và điều chỉnh các biến môi trường sau:
             setx GPU_FORCE_64BIT_PTR 0
@@ -30,5 +23,3 @@
             setx GPU_USE_SYNC_OBJECTS 1
             setx GPU_MAX_ALLOC_PERCENT 100
             setx GPU_SINGLE_ALLOC_PERCENT 100
-
- 
