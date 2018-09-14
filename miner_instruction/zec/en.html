@@ -1,27 +1,34 @@
-<p><strong>Overview</strong></p>
-<p>1. Set Virtual Memory</p>
-<p>2.&nbsp;Set Environment Variables</p>
-<p><strong>-----------------------------------------------------</strong></p>
-<p><strong>Set Virtual Memory</strong></p>
-<ol>
-<li>Open up search and type in &ldquo;<strong>This PC</strong>&ldquo;, right click on it and choose &ldquo;<strong>Properties</strong>&ldquo;</li>
-<li>Then click on &ldquo;<strong>Advanced System Settings</strong>&ldquo;</li>
-<li>On &ldquo;<strong>Advanced</strong>&rdquo; tab where it says &ldquo;<strong>Performance</strong>&rdquo; click on &ldquo;<strong>Settings</strong>&ldquo;</li>
-<li>Click &ldquo;<strong>Advanced</strong>&rdquo; tab</li>
-<li>At the bottom you will see the &ldquo;<strong>Virtual memory</strong>&ldquo; option, click on &ldquo;<strong>Change</strong>&ldquo;</li>
-</ol>
-<ul>
-<li>Uncheck&nbsp;<strong>&ldquo;Automatically manage paging file size for all drives</strong>&ldquo;</li>
-<li>Check &ldquo;<strong>Custom size</strong>&ldquo;</li>
-<li>Now depending on how much GPU&rsquo;s you have you will need to increase the virtual memory. In general for each GPU you need to have 3GB Virtual Memory (because the DAG file used for hashing ethereum is above 2GB and going to 3 GB this year). So if you have 6 GPU you need to have 6x3GB Virtual Memory = 18GB</li>
-<li>In the &ldquo;<strong>Initial size (MB)</strong>&rdquo; type:&nbsp;<strong>2000MB x GPU Count (12000MB for 6 GPU mining rig, 24000MB for 12 GPU)&nbsp;</strong></li>
-<li>In the &ldquo;<strong>Maximum size (MB)</strong>&rdquo; type:&nbsp;<strong>3000MB x GPU Count (18000MB for 6 GPU mining rig, 36000MB for 12 GPU)</strong></li>
-<li>Click &ldquo;<strong>Set</strong>&rdquo; , then &ldquo;<strong>OK</strong>&rdquo; and &ldquo;<strong>Apply</strong>&ldquo;</li>
-</ul>
-<p><strong>-----------------------------------------------------</strong></p>
-<p><strong>Set Environment Variables</strong></p>
-<ol>
-<li>Open windows Command Prompt and set below enviroment variables</li>
-</ol>
-<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_FORCE_64BIT_PTR 0<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_MAX_HEAP_SIZE 100<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_USE_SYNC_OBJECTS 1<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_MAX_ALLOC_PERCENT 100<br />&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; setx GPU_SINGLE_ALLOC_PERCENT 100</p>
-<p>&nbsp;</p>
+#### Overview
+
+1. Set Virtual Memory
+
+2. Set Environment Variables
+
+------------
+
+**Set Virtual Memory**
+
+1. Open up search and type in “This PC“, right click on it and choose “Properties“
+2. Then click on “Advanced System Settings“
+3. On **Advanced** tab where it says **Performance** click on **Settings**
+4. Click “**Advanced**” tab
+5. At the bottom you will see the **Virtual memory** option, click on **Change**
+- Uncheck “Automatically manage paging file size for all drives“
+- Check **Custom size**
+- Now depending on how much GPU’s you have you will need to increase the virtual memory. In general for each GPU you need to have 3GB Virtual Memory (because the DAG file used for hashing ethereum is above 2GB and going to 3 GB this year). So if you have 6 GPU you need to have 6x3GB Virtual Memory = 18GB
+- In the “Initial size (MB)” type: 2000MB x GPU Count (12000MB for 6 GPU mining rig, 24000MB for 12 GPU) 
+- In the “Maximum size (MB)” type: 3000MB x GPU Count (18000MB for 6 GPU mining rig, 36000MB for 12 GPU)
+- Click **Set** , then **OK** and **Apply**
+
+------------
+
+**Set Environment Variables**
+
+1. Open windows Command Prompt and set below enviroment variables
+            setx GPU_FORCE_64BIT_PTR 0
+            setx GPU_MAX_HEAP_SIZE 100
+            setx GPU_USE_SYNC_OBJECTS 1
+            setx GPU_MAX_ALLOC_PERCENT 100
+            setx GPU_SINGLE_ALLOC_PERCENT 100
+
+ 
