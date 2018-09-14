@@ -1,0 +1,25 @@
+**Nội dung chính**
+1. Điều chỉnh RAM ảo
+2. Điều chỉnh biến môi trường
+------------
+**Điều chỉnh RAM ảo**
+
+1. Mở  tìm kiếm và đánh **This PC**, nhấp phải chuột và chọn **Properties**
+2. Sau đó chọn **Advanced System Settings**
+3. Tại **Advanced** tab,  **Performance** chọn **Settings**
+4. Chọn **Advanced** tab
+5. Ớ phía dưới ban sẽ thấy **Virtual memory**, chọn **Change**
+- Bỏ chọn** Automatically manage paging file size for all drives**
+- Chọn **Custom size**
+- Tùy thuộc vào kích thước GPU hiện tại mà bạn sẽ cần tăng bộ nhớ ảo tương ứng. Thông thường mỗi GPU cần ít nhất 4GB và có thể lên 5GB vào cuối năm. Vì vậy nesu bạn có 6 GPU bạn sẽ cần 6x4GB = 24GB
+- Tại **Initial size (MB)**, đánh 4000MB x GPU Count (24000MB cho máy đào 6 GPU )
+- Tại “Maximum size (MB)” đánh: 5000MB x GPU Count (30000MB cho máy đào 6 GPU)
+- Chọn “Set” , và “OK” và “Apply“
+------------
+**Điều chỉnh biến môi trường**
+1. Mở cửa sổ** Windows Command Prompt **và điều chỉnh các biến môi trường sau:
+            setx GPU_FORCE_64BIT_PTR 0
+            setx GPU_MAX_HEAP_SIZE 100
+            setx GPU_USE_SYNC_OBJECTS 1
+            setx GPU_MAX_ALLOC_PERCENT 100
+            setx GPU_SINGLE_ALLOC_PERCENT 100
