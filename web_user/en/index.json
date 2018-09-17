@@ -26,5 +26,23 @@
   "announcement": "Announcements",
   "no-announcements": "No announcements",
 
-  "by-freedom": "bởi Freedom!"
+  "by-freedom": "bởi Freedom!",
+
+  "crypto": "crypto",
+  "datetime": "Datetime",
+
+  "stats": "Stats",
+  "hashrates": "Hashrates",
+  "shares": "Shares",
+  "current-hashrate": "Current hashrate",
+  "average-hashrate": "Average hashrate",
+  "invalid-shares": "Invalid shares",
+  "stale-shares": "Slate shares",
+  "valid-shares": "Valid shares",
+
+  "today": "today",
+  "this-week": "This week",
+  "this-month": "This month",
+  "last-month": "Last month",
+  "custom": "Custom"
 }

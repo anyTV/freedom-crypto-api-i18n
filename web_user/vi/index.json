@@ -18,5 +18,23 @@
     "announcement": "Thông báo",
     "no-announcements": "Không có thông báo nào",
 
-    "by-freedom": "bởi Freedom!"
+    "by-freedom": "bởi Freedom!",
+
+    "crypto": "Tiền ảo",
+    "datetime": "Thời gian",
+
+    "stats": "Thống kê",
+    "hashrates": "Hashrates",
+    "shares": "Shares",
+    "current-hashrate": "Hashrate hiện tại",
+    "average-hashrate": "Hashrate trung bình",
+    "invalid-shares": "Shares không hợp lệ",
+    "stale-shares": "Shares bị mất",
+    "valid-shares": "Shares hợp lệ",
+
+    "today": "Hôm nay",
+    "this-week": "Tuần này",
+    "this-month": "Tháng này",
+    "last-month": "Tháng trước",
+    "custom": "Tuỳ chọn"
 }
