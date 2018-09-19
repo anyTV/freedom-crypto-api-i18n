@@ -10,6 +10,7 @@
     "join-us-now": "Tham gia với chúng tôi",
     "sign-in": "Đăng nhập",
     "logout": "Đăng xuất",
+    "you-have-been-logged-out-please-log-in-again": "Bạn đã đăng xuất, Xin vui lòng đăng nhập lại.",
 
     "copyright": "Bản quyền",
 
@@ -21,7 +22,8 @@
 
     "by-freedom": "bởi Freedom!",
 
-    "errror-while-loading-configuration": "Lỗi khi đang tải dữ liệu cấu hình",
+    "errror-while-loading-configuration": "Lỗi khi đang tải cấu hình",
+    
 
     "crypto": "Tiền ảo",
     "datetime": "Thời gian",
