@@ -43,6 +43,9 @@
     "last-month": "Tháng trước",
     "custom": "Tuỳ chọn",
 
+    "search": "Tìm kiếm",
+    
+    "miners": "Danh sách thợ mỏ",
     "miner-id": "Mã thợ mỏ",
     "user-id": "Mã người dùng",
     "total-workers": "Tổng số máy đào",

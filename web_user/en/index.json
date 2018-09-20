@@ -50,7 +50,9 @@
   "last-month": "Last month",
   "custom": "Custom",
 
-
+  "search": "Search",
+    
+  "miners": "List miners",
   "miner-id": "Miner Id",
   "user-id": "User Id",
   "total-workers": "Total workers",
