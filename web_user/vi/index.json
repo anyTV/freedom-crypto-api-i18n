@@ -41,5 +41,11 @@
     "this-week": "Tuần này",
     "this-month": "Tháng này",
     "last-month": "Tháng trước",
-    "custom": "Tuỳ chọn"
+    "custom": "Tuỳ chọn",
+
+    "miner-id": "Mã thợ mỏ",
+    "user-id": "Mã người dùng",
+    "total-workers": "Tổng số máy đào",
+    "total-active-workers": "Tổng số máy đào đang hoạt động",
+    "detail": "Chi tiết"
 }

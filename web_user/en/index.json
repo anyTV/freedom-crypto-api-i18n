@@ -48,5 +48,12 @@
   "this-week": "This week",
   "this-month": "This month",
   "last-month": "Last month",
-  "custom": "Custom"
+  "custom": "Custom",
+
+
+  "miner-id": "Miner Id",
+  "user-id": "User Id",
+  "total-workers": "Total workers",
+  "total-active-workers": "Total active workers",
+  "detail": "Detail"
 }
