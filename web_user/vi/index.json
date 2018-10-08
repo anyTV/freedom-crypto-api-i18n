@@ -10,13 +10,36 @@
     "join-us-now": "Tham gia với chúng tôi",
     "sign-in": "Đăng nhập",
     "logout": "Đăng xuất",
+    "you-have-been-logged-out-please-log-in-again": "Bạn đã đăng xuất, Xin vui lòng đăng nhập lại.",
 
     "copyright": "Bản quyền",
 
     "language": "Ngôn ngữ",
+    "language-updated": "Ngôn ngữ đã được cập nhật",
 
     "announcement": "Thông báo",
     "no-announcements": "Không có thông báo nào",
 
-    "by-freedom": "bởi Freedom!"
+    "by-freedom": "bởi Freedom!",
+
+    "errror-while-loading-configuration": "Lỗi khi đang tải cấu hình",
+    
+
+    "crypto": "Tiền ảo",
+    "datetime": "Thời gian",
+
+    "stats": "Thống kê",
+    "hashrates": "Hashrates",
+    "shares": "Shares",
+    "current-hashrate": "Hashrate hiện tại",
+    "average-hashrate": "Hashrate trung bình",
+    "invalid-shares": "Shares không hợp lệ",
+    "stale-shares": "Shares bị mất",
+    "valid-shares": "Shares hợp lệ",
+
+    "today": "Hôm nay",
+    "this-week": "Tuần này",
+    "this-month": "Tháng này",
+    "last-month": "Tháng trước",
+    "custom": "Tuỳ chọn"
 }
