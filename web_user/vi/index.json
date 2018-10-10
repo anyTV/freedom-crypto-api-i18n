@@ -11,6 +11,7 @@
     "sign-in": "Đăng nhập",
     "logout": "Đăng xuất",
     "you-have-been-logged-out-please-log-in-again": "Bạn đã đăng xuất, Xin vui lòng đăng nhập lại.",
+    "not-registered-miner": "Chưa có dữ liệu thợ đào! Vui lòng chạy công cụ đào tiền ảo để được tự động đăng ký!",
 
     "copyright": "Bản quyền",
 
@@ -23,7 +24,6 @@
     "by-freedom": "bởi Freedom!",
 
     "errror-while-loading-configuration": "Lỗi khi đang tải cấu hình",
-    
 
     "crypto": "Tiền ảo",
     "datetime": "Thời gian",
