@@ -28,7 +28,7 @@
   "announcement": "Announcements",
   "no-announcements": "No announcements",
 
-  "by-freedom": "bởi Freedom!",
+  "by-freedom": "By Freedom!",
 
   "errror-while-loading-configuration": "Error while loading configuration",
 
@@ -48,5 +48,14 @@
   "this-week": "This week",
   "this-month": "This month",
   "last-month": "Last month",
-  "custom": "Custom"
+  "custom": "Custom",
+
+  "search": "Search",
+    
+  "miners": "List miners",
+  "miner-id": "Miner Id",
+  "user-id": "User Id",
+  "total-workers": "Total workers",
+  "total-active-workers": "Total active workers",
+  "detail": "Detail"
 }
