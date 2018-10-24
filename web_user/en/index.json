@@ -58,5 +58,6 @@
   "user-id": "User Id",
   "total-workers": "Total workers",
   "total-active-workers": "Total active workers",
-  "detail": "Detail"
+  "detail": "Detail",
+  "download_crypto_miner": "Download Crypto Miner"
 }

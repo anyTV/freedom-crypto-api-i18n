@@ -50,5 +50,6 @@
     "user-id": "Mã người dùng",
     "total-workers": "Tổng số máy đào",
     "total-active-workers": "Tổng số máy đào đang hoạt động",
-    "detail": "Chi tiết"
+    "detail": "Chi tiết",
+    "download_crypto_miner": "Tải Crypto Miner"
 }
