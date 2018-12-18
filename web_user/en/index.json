@@ -20,7 +20,7 @@
   "sign-in": "Signin",
   "logout": "Logout",
   "you-have-been-logged-out-please-log-in-again": "You have been logged out, Please login again.",
-  "not-registered-miner": "Not registered miner! Please run Freedom mining tool to get auto registration.",
+  "not-registered-miner": "Your account is not yet registered! Please download the Freedom Crypto Miner to register and create an account.",
 
   "copyright": "Copyright",
   "language": "Language",
@@ -58,5 +58,6 @@
   "user-id": "User Id",
   "total-workers": "Total workers",
   "total-active-workers": "Total active workers",
-  "detail": "Detail"
+  "detail": "Detail",
+  "download-crypto-miner": "Download Crypto Miner"
 }

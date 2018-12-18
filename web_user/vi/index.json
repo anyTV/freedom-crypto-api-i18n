@@ -11,7 +11,7 @@
     "sign-in": "Đăng nhập",
     "logout": "Đăng xuất",
     "you-have-been-logged-out-please-log-in-again": "Bạn đã đăng xuất, Xin vui lòng đăng nhập lại.",
-    "not-registered-miner": "Chưa có dữ liệu thợ đào! Vui lòng chạy công cụ đào tiền ảo để được tự động đăng ký!",
+    "not-registered-miner": "Chưa có dữ liệu thợ đào! Vui lòng tải Freedom Crypto Miner để đăng ký và tại tài khoản.",
 
     "copyright": "Bản quyền",
 
@@ -50,5 +50,6 @@
     "user-id": "Mã người dùng",
     "total-workers": "Tổng số máy đào",
     "total-active-workers": "Tổng số máy đào đang hoạt động",
-    "detail": "Chi tiết"
+    "detail": "Chi tiết",
+    "download-crypto-miner": "Tải Crypto Miner"
 }
