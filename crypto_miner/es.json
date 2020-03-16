@@ -1,0 +1,11 @@
+{
+  "common" : {
+  },
+  "mail_worker_dead": {
+    "subject": "[IGNIS] Ignis ha dejado de trabajar. Seguro está cansado",
+    "detail_info" : "",
+    "suggest_restart": "Revisa tu ordenador y renincia Ignis de ser necesario. Eso o dale 3 palmaditas en la espalda para que se despierte.",
+    "note": "Si no quieres recibir estas notificaciones, puedes deshabilitar esta función.",
+    "turn_off_notification_path": "Configuración > Configuración de Minero > Deshabilita \"Envía email notificando cuando Ignis se detenga\""
+  }
+}
