@@ -1,0 +1,33 @@
+**Obtener SeLockMemoryPrivilege ha fallado.**
+
+Para Windows 7/10 Home:
+
+1. Descarga e instala Windows Server 2003 Resource Kit Tools. Ignora todas las advertencias de incompatibilidad durante la instalación.
+
+2. Abre la ventana de commando o PowerShell como administrador.
+
+3. Usa ntrights -u %USERNAME% +r SeLockMemoryPrivilege donde %USERNAME% es el usuario que está ejecutando el programa.
+
+4. Reinicia.
+
+*Advertencia: Descarga ntrights.exe solamente desde la página oficial de descargas de Microsoft.
+
+**Error msvcp140.dll y vcruntime140.dll no disponibles**
+
+
+Descarga e instala este paquete ejecutable de Microsoft. Advertencia: No visites sitios que promueven el término “descarga dll”. Los archivos dll son similares a los archivos “exe” con otro nombre y es probable que cualquier dll de sitios dudosos dañen tu PC. Por favor descarga los archivos necesarios directamente de sitios oficiales de Microsoft.
+
+**Error: MEMORY ALLOC FAILED: mmap ha fallado**
+
+En Linux tendrás que configurar el soporte de páginas grandes e incrementar tu ulimit -l.
+
+Para establecer el soporte de páginas grandes, agrega las siguientes líneas a /etc/sysctl.conf (/etc/sysctl.d/xmr-stak.conf para Arch Linux y sus derivados):
+
+vm.nr_hugepages=128
+Para incrementar el ulimit, agrega las siguientes líneas a /etc/security/limits.conf:
+
+* soft memlock 262144
+* hard memlock 262144
+DEBES cerrar sesión e iniciar sesión para que esta configuración haga efecto en tu usuario. No es necesario reiniciar tu equipo, solo debes reiniciar tu sesión)
+
+También puedes hacer esto estilo Windows y simplemente ejecutar como root, pero este método no es recomendable por razones de seguridad.
