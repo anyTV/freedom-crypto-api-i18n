@@ -1,0 +1,26 @@
+**Vista General**
+1. Establecer Memoria Virtual
+2. Establecer Variables de Entorno
+------------
+**Establecer Memoria Virtual**
+
+1. Abrir buscar y escribe **This PC**, da clic derecho en **This PC** y elige **Propiedades**
+2. Ahora da clic en **Configuración Avanzada de Sistema**
+3. En la pestaña **Avanzado** donde dice **Rendimiento** da clic en **Configuración**
+4. Da clic en la pestaña **Avanzado**
+5. En la parte inferior podrás ver la opción **Memoria Virtual**, da clic en **Cambiar**
+- Desactiva “Administrar automáticamente el tamaño del archivo de paginación para todas las unidades”
+- Activa **Tamaño personalizado**
+-Dependiendo de cuantos GPUs tengas, deberás incrementar la memoria virtual. Por lo general, por cada GPU en tu sistema debes tener 3GB de Memoria Virtual (porque el archivo DAG utilizado para el hashing de etherium es mayor a 2GB y este año pasa a 3GB). Si tienes 6 GPU necesitas 6x3GB de Memoria Virtual = 18GB
+- En “Tamaño Inicial (MB)” escribe: 2000MB x GPU en tu sistema (12000MB si tu sistema cuenta con 6 GPU, 24000MB si cuenta con 12 GPU)
+- En “Tamaño Máximo (MB)” escribe: 3000MB x GPU en tu sistema (18000MB si tu sistema cuenta con 6 GPU, 36000MB si cuenta con 12 GPU)
+- Da clic en **Establecer**, luego **OK** y **Aplicar**
+------------
+**Establecer Variables de Entorno**
+
+1. Abre la ventana de comandos (CMD) y establece los siguientes variables de entorno:
+            setx GPU_FORCE_64BIT_PTR 0
+            setx GPU_MAX_HEAP_SIZE 100
+            setx GPU_USE_SYNC_OBJECTS 1
+            setx GPU_MAX_ALLOC_PERCENT 100
+            setx GPU_SINGLE_ALLOC_PERCENT 100
